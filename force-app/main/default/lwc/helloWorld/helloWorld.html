@@ -1,11 +1,24 @@
 <template>
-    <lightning-card  >
+    <lightning-card  title="Two Way DataBinding">
         
         <div class="slds-var-m-around_medium">
            <h1>
             {bind}
            </h1>
-            </div>
+            
+        <lightning-input type="text" onkeyup={changeHandler}></lightning-input>
+        <h2>The {title} is for {bind}</h2>
+    </div>
+    </lightning-card>
+
+    <lightning-card  title="@Track Property">
         
+        <div class="slds-var-m-around_medium">
+           
+            
+        <lightning-input type="text" label="Enter City " onkeyup={changeHandler}></lightning-input>
+
+        <h3>{address.city} is my city</h3>       
+    </div>
     </lightning-card>
 </template>
