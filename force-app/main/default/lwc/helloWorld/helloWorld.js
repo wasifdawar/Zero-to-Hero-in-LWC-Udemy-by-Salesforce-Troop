@@ -1,4 +1,4 @@
-import { LightningElement } from 'lwc';
+import { LightningElement,track } from 'lwc';
 
 export default class HelloWorld extends LightningElement {
 
@@ -10,7 +10,7 @@ export default class HelloWorld extends LightningElement {
         this.title = event.target.value;
     }
 
-    address = 
+    @track address = 
     {
       city: "Karachi",
       postal: "74900",
