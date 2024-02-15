@@ -21,4 +21,10 @@ export default class HelloWorld extends LightningElement {
     {
         this.address.city = event.target.value;
     }
+
+    student = ['Wasif','Dawar','Habib','Hamza','Ali'];
+
+    get firstStd(){
+        return this.student[0].toUpperCase();
+    }
 }

@@ -1,0 +1,22 @@
+<template>
+    <lightning-card  title="Conditional Rendering">
+        
+        <div class="slds-var-m-around_medium">
+            <lightning-button
+            variant="brand"
+            label="Show Data"
+            title="Begins the task"
+            disable-animation
+            onclick={handleClick}
+            class="slds-var-m-left_x-small">
+        </lightning-button>
+        <template if:true={isVisible}>
+            <h3>
+                LWC Zero to Hero by Udemy
+            </h3>
+        </template>
+            
+       
+    </div>
+    </lightning-card>
+</template>
